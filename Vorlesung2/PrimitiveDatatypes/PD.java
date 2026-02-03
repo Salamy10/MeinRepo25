@@ -44,7 +44,16 @@ public class zeichenketten {
 		    double double1 = 0.1;
 		    
 		    System.out.println("float1: " + float1);
-		    System.out.println("double1: " + double1);		  
+		    System.out.println("double1: " + double1);
+
+		  	
+		  
+		  	//BRAUCHEN WIR NIE WIEDER: "echte" 0.1
+		    BigDecimal bigDecimal1 = new BigDecimal(0.1F);
+		    BigDecimal bigDecimal2 = new BigDecimal(0.1);
+		    
+		    System.out.println("BigDecimal 1: " + bigDecimal1);
+		    System.out.println("BigDecimal 2: " + bigDecimal2);
 		  } 		
 
 }
