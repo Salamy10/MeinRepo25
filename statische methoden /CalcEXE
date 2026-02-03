@@ -1,4 +1,4 @@
-public class calcEXE {
+public class CalcEXE {
 
     public static void main(String[] args){
         int result = calc.add(5, 3);
