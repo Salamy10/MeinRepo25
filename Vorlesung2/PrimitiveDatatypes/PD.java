@@ -8,7 +8,7 @@ public class D03_PrimitiveDataTypes{
     int int1 = 1_000_000;
     long long1 = 5_000_000_000L;    //"L" an die zahl hängen um "long" zu deklarieren
 
-    
+    System.out.println("byte1: " + byte1);
   }
   
 }
