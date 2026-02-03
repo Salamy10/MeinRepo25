@@ -30,7 +30,21 @@ public class zeichenketten {
 		    System.out.println("4: " + char4);
 		    System.out.println("5: " + char5);
 		    System.out.println("6: " + char6);
-		  }
-	  		
+
+		  	//boolscher wahrheitswert
+		    boolean boolean1 = true;
+		    boolean boolean2 = false;
+		    
+		    System.out.println("1: " + boolean1);
+		    System.out.println("2: " + boolean2);
+
+
+		  	//Gleitkommazahlen (Floating Point Numbers)
+		    float float1 = 0.1F;	//"F" an die zahl hängen um "float" zu deklarieren
+		    double double1 = 0.1;
+		    
+		    System.out.println("float1: " + float1);
+		    System.out.println("double1: " + double1);		  
+		  } 		
 
 }
