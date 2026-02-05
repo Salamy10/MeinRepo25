@@ -34,7 +34,16 @@ public class D04_DataObjects {
 		//Unveränderliche Datenobjekte
 		final String text0 = "Java";	//"final" signalisiert unveränderlichen wert
 //		text = "Python";	//würde einen Fehler angeben
-		
+	
+//Sichtbarkeit von Datenobjekten
+		//X = 8;
+		//i = 7; // wird nicht funktioniereb -> DO noch nicht festegelegt
+}
+	public static void doSomething(int x){
+
+		int i = 5
+		x = 7
+		System.out.println(i + x); //funktioniert, da daten in methode deklariert
 		
 	}
 
