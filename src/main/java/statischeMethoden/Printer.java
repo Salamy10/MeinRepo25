@@ -1,3 +1,5 @@
+package statischeMethoden;
+
 public class Printer {
 
     public static void printHelloWorld(){
