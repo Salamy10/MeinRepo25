@@ -1,4 +1,4 @@
-package Vorlesung2;
+package V;
 public class D06_Strings {
 	
 	public static void main(String[] args) {

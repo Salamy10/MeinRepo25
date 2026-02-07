@@ -1,4 +1,5 @@
-public class D05_Typecasting {
+package V;
+public class D05_TypeCasting {
 	
 	public static void main(String[] args) {
 		
