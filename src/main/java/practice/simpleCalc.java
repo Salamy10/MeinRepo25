@@ -7,6 +7,10 @@ public class simpleCalc {
 	
 	public static void main(String[] args) {
 
+		boolean wiederholen = true;
+		
+		while (wiederholen = true) {
+		
 		Scanner scanner = new Scanner(System.in);
 		
 		
@@ -27,8 +31,22 @@ public class simpleCalc {
 		
 		}
 
-		scanner.close();
+		
+		System.out.println("Wollen sie nochmal rechnen? (true = ja, false = nein): ");
+		boolean turn = scanner.nextBoolean();
+		
+		if (turn == false) {
+			System.out.println("Auf Wiedersehen!");
+			break;}
+		if (turn == true) {
+			System.out.println("Ok, lass es uns nochmal versuchen!");
+			wiederholen = true;
+			
+			
+		}
+		
 		
 	}
 
+}
 }
