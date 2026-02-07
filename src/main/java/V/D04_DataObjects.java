@@ -33,7 +33,7 @@ public class D04_DataObjects {
 		System.out.println("age: " + age);
 		
 		//Unveränderliche Datenobjekte
-		final String text0 = "Java";	//"final" signalisiert unveränderlichen wert
+//		final String text0 = "Java";	//"final" signalisiert unveränderlichen wert
 //		text = "Python";	//würde einen Fehler angeben
 	
 //Sichtbarkeit von Datenobjekten
