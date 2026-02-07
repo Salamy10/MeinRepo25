@@ -1,6 +1,5 @@
-package P1;
 
-public class zeichenketten {
+public class D03_PrimitiveDataTypes {
 
 	  public static void main(String[] args){
 
