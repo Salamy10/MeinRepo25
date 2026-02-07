@@ -1,5 +1,3 @@
-package P1;
-
 public class D07_ArithmeticOperators {
 	public static void main(String[] args) {
 		
