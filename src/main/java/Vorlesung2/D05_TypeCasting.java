@@ -1,5 +1,3 @@
-package P1;
-
 public class D05_Typecasting {
 	
 	public static void main(String[] args) {
