@@ -27,13 +27,13 @@ public class flexCalc
 			
 			
 			if (operator.equals("+")) {
-			System.out.println(a + "+" + b + "=" + a+b);
+			System.out.println(a + "+" + b + "=" + (a+b));
 			}
 			if (operator.equals("-")) {
 			System.out.println(a + "-" + b + "=" + (a-b));
 			}
 			if (operator.equals("*")) {
-			System.out.println(a + "*" + b + "=" + a*b);
+			System.out.println(a + "*" + b + "=" + (a*b));
 			}
 			if (operator.equals("/")) {
 			System.out.println(a + "/" + b + "=" + (double) a/b);
@@ -46,7 +46,7 @@ public class flexCalc
 		
 		
 		
-			System.out.println("Wollen sie nochmal rechnen? (y = ja, n = nein): ");
+			System.out.print("Wollen sie nochmal rechnen? (y = ja, n = nein): ");
 			String turn = scanner.next();
 		
 			if (turn.equals("n")) {
@@ -57,7 +57,7 @@ public class flexCalc
 			wiederholen = true;
 			}
 			else { 
-			System.out.println("Fuck you!");
+			System.out.println("Fuck you!" + "\nSHUT OFF");
 			break;}
 			
 			
