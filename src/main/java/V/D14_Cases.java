@@ -12,7 +12,7 @@ public class D14_Cases {
 		char color = scanner.next().charAt(0);
 
 		String colorText;
-		if (color == 'r' || color == 'R') {
+		if (color == 'r' || color == 'R') {			//char nutzt '' nicht ""
 
 			colorText = "rot";
 
