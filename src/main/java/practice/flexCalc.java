@@ -9,9 +9,7 @@ public class flexCalc
 	public static void main(String[] args) 
 	{
 		
-		
-		boolean wiederholen = true;
-		while (wiederholen = true) 
+		while (true) 
 		{
 			
 			Scanner scanner = new Scanner(System.in);
@@ -54,7 +52,6 @@ public class flexCalc
 			break;}
 			if (turn.equals("y")) {
 			System.out.println("Ok, lass es uns nochmal versuchen!");
-			wiederholen = true;
 			}
 			else { 
 			System.out.println("Fuck you!" + "\nSHUT OFF");
