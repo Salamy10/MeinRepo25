@@ -1,4 +1,4 @@
-package P1;
+package V;
 
 import java.util.Scanner;
 
@@ -11,13 +11,16 @@ public class D14_Cases {
 
 		char color = scanner.next().charAt(0);
 
+		/* Lösung mit if-else-if-Leiter */
 		String colorText;
-		if (color == 'r' || color == 'R') {			//char nutzt '' nicht ""
+		if (color == 'r' || color == 'R') {
 
 			colorText = "rot";
 
 		} else if (color == 'g' || color == 'G') {
 			colorText = "grün";
+		} else if (color == 'g' || color == 'G') {
+			colorText = "Grün";
 		} else if (color == 'b' || color == 'B') {
 			colorText = "blau";
 		} else {
@@ -25,10 +28,13 @@ public class D14_Cases {
 		}
 		System.out.println(colorText);
 
-		/*kurzschreibweise*/
+		/* kurzschreibweise */
 //		System.out.println((color == 'r')? "rot" : (color == 'g')? "grün" : (color == 'b')? "blau" : "och nöö");
 
-		/*gut wenn man mehrere Fälle hat die das gleiche Ergebnis bewirken*/
+		
+		
+		/* gut wenn man mehrere Fälle hat die das gleiche Ergebnis bewirken */
+		/* Lösung mit switch-case-Ausdruck */
 		switch (color) {
 		case 'r':
 		case 'R':
@@ -50,13 +56,17 @@ public class D14_Cases {
 		// case prüft immer auf gleichheit (nicht <, >)
 		// aber leider immer noch nicht Elegant
 
-		/* elegantere Lösung (erst ab Java11 (HS hat Java8))*/
+		
+		
+		/* Lösung mit switch-case-Ausdruck (Kurzschreibweise) */
+		/* elegantere Lösung (erst ab Java11 (HS hat Java8)) */
 		switch (color) {
-		case 'r', 'R'-> colorText = "rot";
-		case 'g', 'G'-> colorText = "grün"; 
-		case 'b', 'B'-> colorText = "blau"; 
-		default 	-> colorText = "och nööö";	//syntax fehler unter java11
-		};
+		case 'r', 'R' -> colorText = "rot";
+		case 'g', 'G' -> colorText = "grün";
+		case 'b', 'B' -> colorText = "blau";
+		default -> colorText = "och nööö"; // syntax fehler unter java11
+		}
+		;
 		System.out.println(colorText);
 	}
 
