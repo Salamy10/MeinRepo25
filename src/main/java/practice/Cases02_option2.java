@@ -2,7 +2,7 @@ package practice;
 
 import java.util.Scanner;
 
-public class P01_Cases02_option2 {
+public class Cases02_option2 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

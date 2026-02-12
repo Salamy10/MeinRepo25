@@ -3,7 +3,7 @@ package practice;
 import java.util.Random;
 import java.util.Scanner;
 
-public class P02_Loops05 {
+public class Loops05 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
