@@ -1,7 +1,7 @@
-package P1;
+package practice;
 
 
-public class P03_Arrays07 {
+public class P03_Arrays07_flex {
 
 	public static void main(String[] args) {
 
