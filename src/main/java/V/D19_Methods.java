@@ -1,4 +1,4 @@
-package P1;
+package V;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ public class D19_Methods {
 
 	public static void main(String[] args) {
 
-		/* Prozeduale Lösung (Daten und Routinen getrennt) */
+		/* Prozeduale LÃ¶sung (Daten und Routinen getrennt) */
 		String[] names = new String[2];
 
 		StringArrayHelper.print(names);
@@ -24,7 +24,7 @@ public class D19_Methods {
 
 		
 		
-		/* Objektorientierte Lösung (Daten und Routinen verbunden) */
+		/* Objektorientierte LÃ¶sung (Daten und Routinen verbunden) */
 		StringArray names2 = new StringArray();
 		
 		names2.print();
@@ -38,3 +38,4 @@ public class D19_Methods {
 	}
 
 }
+
