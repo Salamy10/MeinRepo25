@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import model.Flight;
 import model.FlightConnection;
 
-public class D18_ComplexDataTypes {
+public class D18_Attributes {
 
 	public static void main(String[] args) {
 		
