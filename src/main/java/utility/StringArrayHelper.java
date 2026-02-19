@@ -1,12 +1,12 @@
-package Utility;
+package utility;
 
 public class StringArrayHelper {
 
 	public static String[] add(String[] array, String value) {
 
 		int size = StringArrayHelper.size(array);
-		if (size == array.length) { // letzte schublade nicht leer = letzte schublade befüllt = array voll
-			String[] tmp = new String[array.length * 2]; // verdopple arraygröße
+		if (size == array.length) { // letzte schublade nicht leer = letzte schublade befÃ¼llt = array voll
+			String[] tmp = new String[array.length * 2]; // verdopple arraygrÃ¶ÃŸe
 			for (int i = 0; i < array.length; i++) {
 				tmp[i] = array[i];
 			}
@@ -47,3 +47,4 @@ public class StringArrayHelper {
 	}
 
 }
+
