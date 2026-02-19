@@ -1,6 +1,6 @@
 package model;
 
-import Utility.StringArrayHelper;
+import utility.StringArrayHelper;
 
 public class StringArray {
 
