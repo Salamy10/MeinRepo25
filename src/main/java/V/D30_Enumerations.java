@@ -1,7 +1,10 @@
 package V;
 
+import java.time.LocalDate;
+
 import model.PlugType;
 import model.TableLight;
+import model.Weekday;
 
 public class D30_Enumerations {
 
@@ -16,6 +19,9 @@ public class D30_Enumerations {
 		System.out.println(typeF);
 		System.out.println(typeI);
 		System.out.println(light1);
+		
+		System.out.println(Weekday.THURSDAY);
+		System.out.println(LocalDate.now().getMonth());
 	}
 
 }
