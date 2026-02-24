@@ -68,10 +68,15 @@ public class TableLight {
 
 	@Override // +1 punkt klausur
 	public String toString() {
-		return "TableLight [isConnected=" + isConnected + ", isOn=" + isOn + ", lightBulb=" + lightBulb + "]";
+		return "TableLight [isConnected=" + isConnected + ", isOn=" + isOn + ", lightBulb=" + lightBulb + 
+				", plugType= " + plugType +  "]";
 	} // gehört zum guten ton die Klasse richtig abzugeben
 
 	public static int getNumberOfTableLights() {
 		return numberOfTableLights;
+	}
+	
+	public PlugType getPlugType() {
+		return plugType;
 	}
 }
