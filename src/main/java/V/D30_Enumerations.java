@@ -22,6 +22,7 @@ public class D30_Enumerations {
 		
 		System.out.println(Weekday.THURSDAY);
 		System.out.println(LocalDate.now().getMonth());
+		System.out.println((PlugType.valueOf("TYPE_F")));
 	}
 
 }
