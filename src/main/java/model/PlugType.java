@@ -1,10 +1,12 @@
 package model;
 
-public class PlugType {
+public enum PlugType {	//KlassenTyp "enum" für Aufzählungen
 
 	//definierte Konstanten
-	public final static PlugType TYPE_F = new PlugType("Typ-F", "CEE 7/4", "Europa");
-	public final static PlugType TYPE_I = new PlugType("Typ-I", "AS/NZS 3112", "Australien");
+	TYPE_F("Typ-F", "CEE 7/4", "Europa"),
+	TYPE_I("Typ-I", "AS/NZS 3112", "Australien");
+//	Prinzipiell das selbe wie die ausführliche Form:
+//	public final static PlugType TYPE_I = new PlugType("Typ-I", "AS/NZS 3112", "Australien");
 	
 	
 	private final String description;
