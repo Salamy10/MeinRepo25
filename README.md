@@ -8,7 +8,7 @@
   
 ## Prüfungswichtig!!:
 D29 & person auf jeden Fall aufgabe
-Bonuspunkte:
+Bonuspunkte: 
 "@Override" 
 
 ## Quellcode
