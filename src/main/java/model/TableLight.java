@@ -11,12 +11,12 @@ public class TableLight {
 	// statische Methode
 
 	public TableLight() { // komplett ohne Parameter
-		plugType = new PlugType("Typ F", "CEE 7/4", "Europa")
+		plugType = new PlugType("Typ F", "CEE 7/4", "Europa");
 		numberOfTableLights++; // bietet sich bei der Implementierung der Methode an
 	}
 
 	public TableLight(LightBulb lightBulb) { // Hier mit "lightBulb"
-		plugType = new PlugType("Typ F", "CEE 7/4", "Europa")
+		plugType = new PlugType("Typ F", "CEE 7/4", "Europa");
 		numberOfTableLights++;
 		this.lightBulb = lightBulb;
 	}
