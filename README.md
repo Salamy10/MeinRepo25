@@ -6,6 +6,11 @@
 ## Tutorium Repo
 - [Tutorium-WWIBE225](https://github.com/JSiggelkow/Tutorium-WWIBE225)
   
+## Prüfungswichtig!!:
+D29 & person auf jeden Fall aufgabe
+Bonuspunkte:
+"@Override" 
+
 ## Quellcode
 
 - [Startklassen](src/main/java/main)
