@@ -8,8 +8,9 @@
   
 ## Prüfungswichtig!!:
 D29 & person auf jeden Fall aufgabe
-Bonuspunkte: 
-"@Override" 
+Bonuspunkte:  
+"@Override"  
+public static void main(String[] args) **throws FileNotFoundException**{ ...	}
 
 ## Quellcode
 
