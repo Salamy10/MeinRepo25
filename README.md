@@ -9,7 +9,10 @@
 ## Prüfungswichtig!!:
 D29 & person auf jeden Fall aufgabe
 Bonuspunkte:  
-"@Override"  
+@Override
+public String toString() {
+		return "Person [name=" + name + ", gender=" + gender + ", birthdate=" + birthdate;
+	}  
 public static void main(String[] args) **throws FileNotFoundException**{ ...	}
 
 ## Quellcode
