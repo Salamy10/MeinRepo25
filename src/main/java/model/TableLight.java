@@ -6,6 +6,18 @@ public class TableLight {
 	private boolean isOn;
 	private LightBulb lightBulb;
 
+	private static int numberOfTableLights; // ++ zählt jedes mal wenn eine Tischlampe erstellt wird
+	// statische Methode
+
+	public TableLight() { // komplett ohne Parameter
+		numberOfTableLights++; // bietet sich bei der Implementierung der Methode an
+	}
+
+	public TableLight(LightBulb lightBulb) { // Hier mit "lightBulb"
+		numberOfTableLights++;
+		this.lightBulb = lightBulb;
+	}
+
 	public void plugIn() {
 		isConnected = true;
 	}
@@ -29,26 +41,34 @@ public class TableLight {
 	}
 
 	public boolean isShining() {
-		if (isConnected == true && isOn /* "== true" optional, da schon boolsch*/ && lightBulb != null) {
+		if (isConnected == true && isOn /* "== true" optional, da schon boolsch */ && lightBulb != null) {
 			return true;
 		} else {
 			return false;
 		}
-		
+
 //		return isConnected && isOn && lightBulb !=null;		//profi methode für boolsch == true
 	}
-	
-	
-	//getter methode
-	public boolean isConnected(){
+
+	// getter methode
+	public boolean isConnected() {
 		return isConnected;
 	}
-	
+
 	public boolean isOn() {
 		return isOn;
 	}
-	
+
 	public LightBulb getLightBulb() {
 		return lightBulb;
+	}
+
+	@Override // +1 punkt klausur
+	public String toString() {
+		return "TableLight [isConnected=" + isConnected + ", isOn=" + isOn + ", lightBulb=" + lightBulb + "]";
+	} // gehört zum guten ton die Klasse richtig abzugeben
+
+	public static int getNumberOfTableLights() {
+		return numberOfTableLights;
 	}
 }
