@@ -13,7 +13,7 @@ public class D29_JavaApi {
 	public static void main(String[] args) throws FileNotFoundException { // BONUSPUNKTE
 		ArrayList<Person> persons = new ArrayList<>();
 
-		File file = new File("src/P1/resources/persons.txt"); // muss zuhause nochmal richtig gemacht werden
+		File file = new File("src/main/java/resources/persons.txt"); // muss zuhause nochmal richtig gemacht werden
 		// Klausur -> File als parameter -> ^muss in der Klausur nicht deklariert werden
 		Scanner scanner = new Scanner(file);
 
