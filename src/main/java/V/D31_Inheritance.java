@@ -12,7 +12,7 @@ public class D31_Inheritance {
 		/* Objekterzeugung */
 		TableLight tableLight1 = new TableLight();
 		LightBulb redLightBulb = new LightBulb("rot");
-		TableLight tableLight2 = new TableLight();
+		TableLight tableLight2 = new TableLight(redLightBulb);
 
 		FlashLight flashLight1 = new FlashLight();
 		FlashLight flashLight2 = new FlashLight();
@@ -46,8 +46,18 @@ public class D31_Inheritance {
 
 		for (Light light : lights) {
 			light.switchOn(); // dynamische polymorphie (Ausgang bei Laufzeit bestimmt)
-//			TableLight tableLight = (TableLight) light; //Downcast
-//			tableLight.plugIn();			// Aua weil Taschanlampe will in Tischlampe Konvertieren -> das schlecht
+
+			/* bis Java 16 */
+			if (light instanceof TableLight) {
+				TableLight tableLight = (TableLight) light; // Downcast
+				tableLight.plugIn();
+			}
+
+			/* seit Java 16 */
+//			if(light instanceof TableLight tableLight) {
+//				tableLight.pullThePlug();
+//			}
+
 			System.out.println(light.toString()); // statische Polymorphie (println) + dynamische polymorphie (toString)
 			System.out.println(light.isShining());// statische Polymorphie (println) + dynamische polymorphie
 													// (isShining)
