@@ -1,9 +1,8 @@
 package model;
 
-public class TableLight {
+public class TableLight extends Light{
 
 	private boolean isConnected;
-	private boolean isOn;
 	private LightBulb lightBulb;
 	private final PlugType plugType;
 
@@ -29,13 +28,6 @@ public class TableLight {
 		isConnected = false;
 	}
 
-	public void switchOn() {
-		isOn = true;
-	}
-
-	public void switchOff() {
-		isOn = false;
-	}
 
 	public LightBulb changeLightBulb(LightBulb newLightBulb) {
 		LightBulb oldLightBulb = lightBulb;
@@ -43,6 +35,7 @@ public class TableLight {
 		return oldLightBulb;
 	}
 
+	@Override
 	public boolean isShining() {
 		if (isConnected == true && isOn /* "== true" optional, da schon boolsch */ && lightBulb != null) {
 			return true;
@@ -58,16 +51,12 @@ public class TableLight {
 		return isConnected;
 	}
 
-	public boolean isOn() {
-		return isOn;
-	}
-
 	public LightBulb getLightBulb() {
 		return lightBulb;
 	}
 
 	@Override // +1 punkt klausur
-	public String toString() {
+	public String toString() {		//wandelt Objekt in eine Zeichenkette um
 		return "TableLight [isConnected=" + isConnected + ", isOn=" + isOn + ", lightBulb=" + lightBulb + 
 				", plugType= " + plugType +  "]";
 	} // gehört zum guten ton die Klasse richtig abzugeben
