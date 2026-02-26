@@ -46,9 +46,12 @@ public class D31_Inheritance {
 
 		for (Light light : lights) {
 			light.switchOn(); // dynamische polymorphie (Ausgang bei Laufzeit bestimmt)
+//			TableLight tableLight = (TableLight) light; //Downcast
+//			tableLight.plugIn();			// Aua weil Taschanlampe will in Tischlampe Konvertieren -> das schlecht
 			System.out.println(light.toString()); // statische Polymorphie (println) + dynamische polymorphie (toString)
 			System.out.println(light.isShining());// statische Polymorphie (println) + dynamische polymorphie
 													// (isShining)
+
 		}
 
 	}
