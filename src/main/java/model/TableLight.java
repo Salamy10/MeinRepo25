@@ -1,6 +1,6 @@
 package model;
 
-public class TableLight extends Light{
+public final class TableLight extends Light{	//final verhindert weitere Unterklassen
 
 	private boolean isConnected;
 	private LightBulb lightBulb;
