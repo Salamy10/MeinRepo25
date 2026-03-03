@@ -1,6 +1,6 @@
 package model;
 
-public class Light {
+public abstract class Light {	
 
 	protected boolean isOn;
 
@@ -16,13 +16,9 @@ public class Light {
 		return isOn;
 	}
 
-	public boolean isShining() {
-		if (isOn == true) {
-			return true;
-		} else {
-			return false;
-		}
-	}
+	public abstract boolean isShining();	
+	//abstrakte methden gehen nur in abstrakten Klassen && Nur implementierung keine emethoden
+	//Methode muss dann in Unterklasse implementiert werden
 	
 	@Override
 	public String toString() {
