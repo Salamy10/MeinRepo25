@@ -1,6 +1,6 @@
 package model;
 
-public final class TableLight extends Light{	//final verhindert weitere Unterklassen
+public final class TableLight extends Light implements WiredDevice{	//final verhindert weitere Unterklassen + "implements" greift Interfaces((...)I1, I2, ...)
 
 	private boolean isConnected;
 	private LightBulb lightBulb;
@@ -20,10 +20,12 @@ public final class TableLight extends Light{	//final verhindert weitere Unterkla
 		this.lightBulb = lightBulb;
 	}
 
+	@Override
 	public void plugIn() {
 		isConnected = true;
 	}
 
+	@Override
 	public void pullThePlug() {
 		isConnected = false;
 	}
