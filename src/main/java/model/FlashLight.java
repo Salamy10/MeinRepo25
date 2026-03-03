@@ -1,6 +1,6 @@
 package model;
 
-public class FlashLight extends Light {
+public final class FlashLight extends Light {	//final verhindert weitere Unterklassen
 
 //	private boolean isOn;	//kommt von class "Light
 	private double energyLevel;
