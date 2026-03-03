@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-public class Animal {
+public class Animal {	//Oberklasse von LandAnimal, WaterAnimal & AirAnimal
 
    private final String type;
    private double weightInKg;
