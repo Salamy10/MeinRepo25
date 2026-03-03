@@ -14,7 +14,10 @@ public String toString() {
 		return "Person [name=" + name + ", gender=" + gender + ", birthdate=" + birthdate;
 	}  
   
-public static void main(String[] args) **throws FileNotFoundException**{ ...	}
+public static void main(String[] args) **throws FileNotFoundException**{ ...	}  
+  
+scanner.close();
+
 
 ## Quellcode
 
